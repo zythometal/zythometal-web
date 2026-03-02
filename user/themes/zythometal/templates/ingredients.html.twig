@@ -1,0 +1,23 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+<div class="accueil">
+
+   <section class="page-content">
+       <div class="container">
+           {{ page.content|raw }}
+       </div>
+   </section>
+
+    <section class="nav">
+        <a href="/eau">L'eau</a>
+        <a href="/malt">Les malts</a>
+        <a href="/houblon">Les houblons</a>
+	<a href="/levures">Les levures</a>
+    </section>
+
+</div>
+
+{% endblock %}
+

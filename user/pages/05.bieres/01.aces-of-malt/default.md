@@ -1,28 +1,29 @@
 ---
 title: Aces of Malt
-style: Lager Blonde
-abv: 5°
+template: beer
+tagline: |
+  Pico-brasserie artisanale  
+signature: Brassé en Vendée
+style: Lager blonde
+abv: 7%
+ibu: 17
+ebc: 16
+release: 01/2026
 poster: acesofmalt.png
-inspiration: Iron Maiden
+littlebock: https://www.littlebock.fr/recettes-bieres/170670/nom/aces-of-malt 
+inspiration: |
+  ### Genese
 
+  Une petite bière anglaise légère qui se bois sans soif.
 
-malts:
-- malt1
-- mat2
+  ### Atmosphere musicale
 
+  Vu l'affiche j'ai pas besoins d'expliquer l'atmosphère musicale, un bon [Iron Maiden](https://www.metal-archives.com/bands/Iron_Maiden/25).
 
-houblons:
-- Magnum
-- Saaz
+  ### NDB (Notes du brasseur)
 
-
-levure: BE-256
-
-
-groupe: Iron Maiden
-morceau: Aces Hight
-youtube: https://www.youtube.com/watch?v=XXXX
+  Améliorer la teneur en mousse, qui s'effondre assez rapidement.
+music:
+  youtube: https://www.youtube.com/watch?v=4sFewhTAdjs&list=RD4sFewhTAdjs&start_radio=1
+  deezer: https://link.deezer.com/s/32B48GkNdtNqNtV9RmXDe
 ---
-
-
-Bière blonde qui s'évade.
