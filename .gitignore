@@ -2,6 +2,7 @@ backup/*
 cache/*
 logs/*
 tmp/*
+images/*
 .github/*
 vendor/*
 composer.lock
