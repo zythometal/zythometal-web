@@ -1,0 +1,22 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+<div class="accueil">
+
+   <section class="page-content">
+       <div class="container">
+           {{ page.content|raw }}
+       </div>
+   </section>
+
+    <section class="nav">
+        <a href="/fermentation-haute">Fermentation Haute</a>
+        <a href="/fermentation-basse">Fermentation Basse</a>
+        <a href="/fermentation-spontanee">Fermentation spontannée</a>
+    </section>
+
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="utf-8">
+   <title>{{ page.title ?: site.title }}</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   {% block stylesheets %}
+     {% do assets.addCss('theme://css/custom.css') %}
+     {{ assets.css()|raw }}
+   {% endblock %}
+</head>
+
+<body class="{{ page.header.body_classes }}">
+   {% block header %}
+      <section class="brew-hero">
+          <div class="hero-content">
+              <img src="/user/themes/zythometal/images/logo.jpg" 
+                   alt="Zythometal Logo"
+                   class="brew-logo">
+
+              {% if page.header.tagline %}
+                  <p class="tagline">
+                      {{ page.header.tagline|raw }}
+                  </p>
+              {% endif %}
+
+              {% if page.header.signature %}
+                  <div class="signature">
+                      {{ page.header.signature }}
+                  </div>
+              {% endif %}
+          </div>
+      </section>
+   {% endblock %}
+
+   {% block content %}
+   <section class="page-content">
+       <div class="container">
+           {{ page.content|raw }}
+       </div>
+   </section>
+   {% endblock %}
+
+   {% block footer %}
+     <footer class="site-footer">
+      <div class="footer-content">
+        <a href="{{ page.find('/accueil').url }}">
+          <img src="/user/themes/zythometal/images/brew-in-vendee.png"
+             alt="Sceau Zythometal Vendée"
+             class="footer-seal">
+        </a>
+        <p class="footer-text">
+            © {{ "now"|date("Y") }} Zythometal — Pico-brasserie artisanale — Vendée
+        </p>
+      </div>
+    </footer>
+   {% endblock %}
+
+   {% block javascripts %}
+     {{ assets.js()|raw }}
+   {% endblock %}
+
+</body>
+</html>

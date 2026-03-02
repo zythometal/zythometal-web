@@ -1,0 +1,18 @@
+name: Zythometal
+slug: zythometal
+version: 1.0
+description: Thème officiel Zythometal Brewing
+icon: rebel
+
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: Thème actif
+      highlight: 1
+      default: 1
+      options:
+        1: Oui
+        0: Non

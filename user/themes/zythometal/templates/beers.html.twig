@@ -1,0 +1,18 @@
+{% extends 'default.html.twig' %}
+
+
+{% block content %}
+<h1 class="page-title">Bières</h1>
+
+
+<div class="beer-grid">
+{% for page in page.children %}
+<a class="beer-card" href="{{ page.url }}">
+<img src="{{ page.media[page.header.label].url }}">
+<h3>{{ page.title }}</h3>
+<p>{{ page.header.style }} — {{ page.header.abv }}%</p>
+<span class="inspiration">{{ page.header.inspiration }}</span>
+</a>
+{% endfor %}
+</div>
+{% endblock %}

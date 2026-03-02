@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="utf-8">
+   <title>{{ page.title ?: site.title }}</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   {% block stylesheets %}
+     {% do assets.addCss('theme://css/custom.css') %}
+     {{ assets.css()|raw }}
+   {% endblock %}
+</head>
+
+{% block content %}
+
+<body>
+<div class="landing">
+   <img src="{{ url('theme://images/home-bg.png') }}" class="landing-bg">
+   <!-- ZONES CLIQUABLES -->
+   <a href="{{ base_url_relative }}/accueil" class="zone zone-enter"></a>
+</div>
+
+{% endblock %}
+</body>
+
+</html>

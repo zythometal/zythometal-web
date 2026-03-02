@@ -1,0 +1,33 @@
+{% extends 'default.html.twig' %}
+
+
+{% block content %}
+<section class="beer-hero">
+<img class="label" src="{{ page.media[page.header.label].url }}">
+<h1>{{ page.title }}</h1>
+<p class="meta">{{ page.header.style }} — {{ page.header.abv }}%</p>
+<p class="insp">Inspirée par {{ page.header.inspiration }}</p>
+</section>
+
+
+<section class="content">
+{{ page.content }}
+</section>
+
+
+<section class="recipe">
+<h2>Recette</h2>
+<ul>
+<li><strong>Malts :</strong> {{ page.header.malts|join(', ') }}</li>
+<li><strong>Houblons :</strong> {{ page.header.houblons|join(', ') }}</li>
+<li><strong>Levure :</strong> {{ page.header.levure }}</li>
+</ul>
+</section>
+
+
+<section class="music">
+<h2>Inspiration musicale</h2>
+<p>{{ page.header.groupe }} — {{ page.header.morceau }}</p>
+<iframe width="560" height="315" src="{{ page.header.youtube|replace({'watch?v=':'embed/'}) }}" frameborder="0" allowfullscreen></iframe>
+</section>
+{% endblock %}

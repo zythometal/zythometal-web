@@ -1,0 +1,11 @@
+state: enabled
+email: guillaume@zythometal.beer
+fullname: Zythometal
+title: zythoadmin
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$JEjp0Zaz5Zh.q8kQqpycUuyAstzIVhMfUZLDKF0.F6/FCrEcX4mla

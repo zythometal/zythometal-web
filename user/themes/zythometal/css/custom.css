@@ -1,0 +1,304 @@
+/* Reset des marges par défaut */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+/* Scroll bloqué uniquement sur la home */
+body.home-landing {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Ajustements mobile */
+@media (max-width: 768px) {
+    .landing-menu {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    .landing-menu a {
+        margin: 0 15px; /* moins d'espace entre les liens */
+        display: block; /* liens en colonne si besoin */
+        margin-bottom: 10px;
+    }
+    
+    .zone-enter {
+        width: 200px; /* zone un peu plus petite sur mobile */
+        height: 60px;
+        bottom: 30px;
+    }
+}
+
+/* Pour très petits écrans */
+@media (max-width: 480px) {
+    .landing-menu {
+        font-size: 12px;
+    }
+    
+    .landing-menu a {
+        margin: 0 10px;
+    }
+}
+
+.landing {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+
+.landing-bg {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0.9;
+  z-index:1;
+}
+
+/* MENU */
+.landing-menu {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  z-index: 5;
+}
+
+.landing-menu a {
+  color: #d6a84f;
+  margin: 0 40px;
+  text-decoration: none;
+}
+
+.landing-menu a:hover {
+  color: white;
+}
+
+/* zones invisibles */
+.zone {
+  position: absolute;
+  display: block;
+}
+
+/* zone cliquable */
+.zone-enter{
+    opacity:0.4;
+    position:absolute;
+    bottom:90px;
+    left:50%;
+    transform:translateX(-50%);
+    width:580px;
+    height:80px;
+    z-index:10;   /* plus haut que l'image */
+    cursor:pointer;
+}
+
+/* zone bieres */
+.zone-bieres {
+  top: 0;
+  left: 0;
+  width: 33%;
+  height: 120px;
+}
+
+/* zone contact */
+.zone-contact {
+  top: 0;
+  right: 0;
+  width: 33%;
+  height: 120px;
+}
+
+.accueil{
+    background:black;
+    color:white;
+    text-align:center;
+    padding-top:80px;
+}
+
+
+.main-site{
+    background:black;
+    color:white;
+    text-align:left;
+    padding-top:80px;
+}
+
+
+
+.logo{
+    width:220px;
+    margin-bottom:40px;
+}
+
+.nav a{
+    display:inline-block;
+    margin:20px;
+    padding:15px 25px;
+    border:1px solid #d4af37;
+    color:#d4af37;
+    text-decoration:none;
+    letter-spacing:2px;
+}
+
+.nav a:hover{
+    background:#d4af37;
+    color:black;
+}
+
+/* HERO ajusté */
+
+.brew-hero{
+    position:relative;
+    height:30vh; /* moins grand */
+    background: black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.brew-logo{
+    width:220px;
+    margin-bottom:25px;
+}
+
+.tagline{
+    font-size:18px;
+    letter-spacing:2px;
+    margin-bottom:30px;
+}
+
+/* Signature Vendée */
+
+.signature{
+    display:inline-block;
+    padding:8px 20px;
+    border:1px solid #d4af37;
+    color:#d4af37;
+    font-size:14px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.brew-hero h1{
+    font-size:48px;
+    letter-spacing:6px;
+}
+
+.tagline{
+    margin-top:20px;
+    font-size:18px;
+    color:white;
+}
+
+.brew-story{
+    background:#111;
+    color:white;
+    padding:80px 20px;
+}
+
+.brew-story .container{
+    max-width:800px;
+    margin:auto;
+}
+
+.brew-story h2{
+    color:#d4af37;
+    margin-top:40px;
+}
+
+/* FOOTER */
+
+.site-footer{
+    background:black;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.footer-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.footer-seal{
+    width:160px;
+    margin-bottom:25px;
+    opacity:0.8;
+    transition:0.3s ease;
+}
+
+.footer-seal:hover{
+    opacity:1;
+    transform:scale(1.05);
+}
+
+.footer-text{
+    color:#777;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.beer-catalog {
+    background: black;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.beer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
+    gap: 40px;
+    max-width: 1100px;
+    margin-top: 40px auto 0;
+}
+
+.beer-card {
+    text-decoration: none;
+    color: white;
+    background: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.beer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.beer-poster {
+    object-fit: cover;
+    object-position: center;
+}
+
+.beer-info {
+    padding: 15px;
+}
+
+.beer-style {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}

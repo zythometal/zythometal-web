@@ -1,0 +1,9 @@
+version: '1.2'
+timestamp: 1770324333
+count: 1
+index:
+  zythoadmin:
+    storage_key: zythoadmin
+    storage_timestamp: 1770324333
+    key: zythoadmin
+    email: guillaume@zythometal.beer

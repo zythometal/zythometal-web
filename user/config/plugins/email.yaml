@@ -1,0 +1,19 @@
+enabled: true
+from: noreply@zythometal.beer
+to: noreply@zythometal.beer
+mailer:
+  engine: smtps
+  smtp:
+    server: mx1.aukfood.net
+    port: 465
+    encryption: ssl
+    user: noreply@zythometal.beer
+    password: '#,70,elASeV'
+  sendmail:
+    bin: '/usr/sbin/sendmail -bs'
+content_type: text/html
+debug: false
+cc: null
+bcc: null
+reply_to: null
+body: null
