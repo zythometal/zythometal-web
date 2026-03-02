@@ -26,4 +26,5 @@ inspiration: |
 music:
   youtube: https://www.youtube.com/watch?v=KQJY-8logFQ&list=RDKQJY-8logFQ&start_radio=1
   deezer: https://link.deezer.com/s/32B2UxTDsohxzABmUYZBn
+degustation: https://www.littlebock.fr/recipe/171879/tasting/new/pDmsdQMz2C2v 
 ---
