@@ -278,7 +278,7 @@ body.home-landing {
 .beer-card {
     text-decoration: none;
     color: white;
-    background: #111;
+    background: black;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -287,11 +287,6 @@ body.home-landing {
 .beer-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-}
-
-.beer-poster {
-    object-fit: cover;
-    object-position: center;
 }
 
 .beer-info {
@@ -356,16 +351,16 @@ body.home-landing {
 
 /* AFFICHE CENTRÉE PROPREMENT */
 
-.beer-poster {
+.beer-poster-wrapper {
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    padding: 15px;
 }
 
-.beer-poster img {
-    max-width: 420px;
-    width: 100%;
+.beer-poster {
+    max-width: 100%;
     height: auto;
+    display: block;
     border: 4px solid #1f1f1f;
     box-shadow:
         0 0 40px rgba(0,0,0,0.9),

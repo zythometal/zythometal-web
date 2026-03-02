@@ -14,11 +14,13 @@
 
             {% set poster = beer.media[beer.header.poster] %}
               {% if poster %}
-                <img src="{{ poster.cropResize(300, 200).url }}"
-                alt="{{ beer.title }}"
-                class="beer-poster">
-              {% endif %}
-              
+                <div class="beer-poster-wrapper">
+                  <img src="{{ poster.cropResize(300, 200).url }}"
+                  alt="{{ beer.title }}"
+                  class="beer-poster">
+               </div>
+           {% endif %}
+ 
             <div class="beer-info">
              <h2>{{ beer.title }}</h2>
                  <p class="beer-style">{{ beer.header.style }}</p>
